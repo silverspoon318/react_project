@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class ContactCreate extends React.Component {
     constructor (props) {
@@ -45,11 +46,11 @@ export default class ContactCreate extends React.Component {
 }
 
 ContactCreate.propTypes = {
-    onCreate: React.PropTypes.func
+    onCreate: PropTypes.func
 };
 
 ContactCreate.defaultProps = {
     onCreate: () => {
-        console.error("onCreate not defined");
+        console.log("onCreate not defined");
     }
 };
